@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Calculator"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_margin="30dp"
+        android:textColor="@color/cardview_light_background"
+        />
+    <EditText
+        android:id="@+id/Number1"
+        android:hint="Enter the number 1"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:textColorHint="#676464"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter the number 2"
+        android:textColorHint="#676464" />
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/PlusBtn"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="+"
+            android:textSize="30dp" />
+
+        <Button
+
+            android:id="@+id/SubBtn"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="-"
+            android:textSize="30dp" />
+
+        <Button
+
+            android:id="@+id/multiplyBtn"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="×"
+            android:textSize="30dp" />
+
+        <Button
+
+            android:id="@+id/DivBtn"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="÷"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Answer"
+        android:layout_width="206dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:textColor="#498991"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
